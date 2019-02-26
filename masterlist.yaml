@@ -4803,7 +4803,6 @@ plugins:
       - name: 'Holds.esp'
         display: '[Holds The City Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/10609)'
       - 'InnCredible.esp'
-      - 'JKs Skyrim.esp'
       - name: 'iWil_UselessShopOverhaul.esp'
         display: 'The Useless Shop and Interior Overhaul'
       - 'NerniesCityandVillageExpansion.esp'
@@ -8095,6 +8094,11 @@ plugins:
             text: '[Friendlier Taverns with Baths and Barns SSE](https://www.nexusmods.com/skyrimspecialedition/mods/1399/) is incompatible with JK''s Skyrim. Please use [Friendlier Taverns](https://www.nexusmods.com/skyrimspecialedition/mods/2506) instead.'
           - lang: de
             text: '[Friendlier Taverns with Baths and Barns SSE](https://www.nexusmods.com/skyrimspecialedition/mods/1399/) ist inkompatibel mit JK''s Skyrim. Bitte nutzen Sie stattdessen [Friendlier Taverns](https://www.nexusmods.com/skyrimspecialedition/mods/2506).'
+      - <<: *semiCompatible
+        subs:
+          - 'Immersive Citizens - AI Overhaul.esp'
+          - 'Partially Compatible. Possible NPC pathing issues in Falkreath and Rorikstead and clipping in Dawnstar. [Source](https://www.nexusmods.com/skyrimspecialedition/mods/6289?tab=description)'
+        condition: 'active("JKs Skyrim.esp")'
       - <<: *patch3rdParty
         subs:
           - 'Dawn of Skyrim'
